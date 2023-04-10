@@ -53,7 +53,8 @@ body{
 }
 
 .container{
-    max-width: 1158px;
+    /* max-width: 1158px; */
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -62,13 +63,13 @@ body{
 }
 
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -215,13 +216,15 @@ img{
 /* -----------------QUALITIES------------------ */
 
 .qualities-item{
-    max-width: calc((100% - 72px) / 4);
+    /* max-width: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 
 .qualities-list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 24px;
+    gap: 72px 24px;
 }
 
 .qualities-icon-box{
@@ -236,9 +239,16 @@ img{
 }
 
 .qualities-name{
-    font-weight: 500;
+    /* font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--first-main-color);
+    margin-bottom: 8px; */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
     color: var(--first-main-color);
     margin-bottom: 8px;
@@ -285,11 +295,14 @@ img{
 
 .team-list{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+   justify-content: center;
 }
 
 .team-item{
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    /* width: 100%; */
 }
 
 .team-text{
@@ -871,4 +884,45 @@ img{
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--hover-color);
+}
+
+@media screen and (min-width: 428px){
+    .container{
+        width: 426px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 766px;
+    }
+    /* .team-item{
+        width: calc((100% - 24px) / 2);
+    } */
+    .qualities-item{
+        width: calc((100% - 24px) / 2);
+    }
+    .team-list{
+        gap: 64px 24px;
+    }
+}
+
+@media screen and (min-width: 1158px){
+    .container {
+        width: 1158px;
+    }
+    .section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .qualities-item {
+        max-width: calc((100% - 72px) / 4);
+    }
+    .qualities-name{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: start;
+    }
 }
