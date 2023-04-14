@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html"
@@ -55,27 +55,118 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg class="icon-open-btn" width="32" height="32">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <div class="mob-close">
+            <button class="menu-close-btn" data-menu-close type="button">
+              <svg class="menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- <button class="menu-close-btn" type="button">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button> -->
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-contact-list list">
+              <!-- <li class="mob-menu-contact-item">
+              <a
+                class="mob-menu-contact-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li> -->
+              <li class="mob-menu-contact-item">
+                <a class="mob-menu-contact-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-contact-item">
+                <a
+                  class="mob-menu-contact-email link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href>
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href>
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href>
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href>
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" data-modal-open class="hero-btn">
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="qualities section">
         <div class="container qualities-container">
           <h2 hidden class="qualities-title">Advantages</h2>
           <ul class="qualities-list list">
             <li class="qualities-item">
-              <!-- <div class="qualities-icon-box">
+              <div class="qualities-icon-box">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="qualities-name">Strategy</h3>
               <p class="qualities-text">
                 Our goal is to identify the business problem to walk away with
@@ -83,11 +174,11 @@
               </p>
             </li>
             <li class="qualities-item">
-              <!-- <div class="qualities-icon-box">
+              <div class="qualities-icon-box">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="qualities-name">Punctuality</h3>
               <p class="qualities-text">
                 Bring the key message to the brand's audience for the best price
@@ -95,11 +186,11 @@
               </p>
             </li>
             <li class="qualities-item">
-              <!-- <div class="qualities-icon-box">
+              <div class="qualities-icon-box">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="qualities-name">Diligence</h3>
               <p class="qualities-text">
                 Research and confirm brands that present the strongest digital
@@ -107,11 +198,11 @@
               </p>
             </li>
             <li class="qualities-item">
-              <!-- <div class="qualities-icon-box">
+              <div class="qualities-icon-box">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="qualities-name">Technologies</h3>
               <p class="qualities-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -121,28 +212,48 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="creation section">
+      <section class="creation section">
         <div class="container">
           <h2 class="creation-title">What Are We Doing</h2>
           <ul class="creation-list list">
             <li class="creation-item">
-              <img src="./images/computer.jpg" alt="computer" width="360" />
+              <img
+                srcset="./images/computer.jpg 1x, ./images/computer-2x.jpg 2x"
+                src="./images/computer.jpg"
+                alt="computer"
+                width="360"
+              />
             </li>
             <li class="creation-item">
-              <img src="./images/messenger.jpg" alt="messenger" width="360" />
+              <img
+                srcset="./images/messenger.jpg 1x, ./images/messenger-2x.jpg 2x"
+                src="./images/messenger.jpg"
+                alt="messenger"
+                width="360"
+              />
             </li>
             <li class="creation-item">
-              <img src="./images/phone.jpg" alt="phone" width="360" />
+              <img
+                srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x"
+                src="./images/phone.jpg"
+                alt="phone"
+                width="360"
+              />
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team section">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                src="./images/mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-text">
                 <h3 class="team-worker-name">Mark Guerrero</h3>
                 <p class="team-worker-position">Product Designer</p>
@@ -179,7 +290,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                src="./images/tom.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-text">
                 <h3 class="team-worker-name">Tom Ford</h3>
                 <p class="team-worker-position">Frontend Developer</p>
@@ -216,7 +332,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                src="./images/camila.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-text">
                 <h3 class="team-worker-name">Camila Garcia</h3>
                 <p class="team-worker-position">Marketing</p>
@@ -253,7 +374,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-text">
                 <h3 class="team-worker-name">Daniel Wilson</h3>
                 <p class="team-worker-position">UI Designer</p>
@@ -292,7 +418,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container customers-container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -340,9 +466,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-info">
           <a class="footer-logo link" href="./index.html"
@@ -406,7 +532,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-close">
@@ -498,5 +624,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
