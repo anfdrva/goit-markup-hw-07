@@ -1089,6 +1089,11 @@ img{
         gap: 40px;
         flex-direction: row;
     }
+    .header-contact-link{
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
     .current.header-link::after{
         top: 43px
     }
